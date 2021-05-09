@@ -4,7 +4,7 @@ import os
 CURR_DIR = os.getcwd()
 
 totalData = open("TotalData.csv","w")
-totalData.write("Category,Message\n")
+totalData.write("Category¬Message\n")
 
 # Listing all files and folder in the path
 filesAndFolders = os.listdir(CURR_DIR)
@@ -49,7 +49,7 @@ for folder in filesAndFolders:
 				readInfo = readInfo + newRow + " "
 		
 		# Writing all the data in the CSV file
-		totalData.write(folder + "," + readInfo + "\n")
+		totalData.write(folder + "¬" + readInfo + "\n")
 		print(file)
 
 # Closing the all data file
